@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function TheCourse() {
   return (
-    <article className="bg-[#1F1755]">
-      <div className="w-full py-8 px-28 flex justify-between items-center gap-7">
+    <article className="bg-[#1F1755]" id="thecourse">
+      <div className="w-full py-8  px-8 lg:px-28  flex justify-between items-center gap-7 max-md:flex-col-reverse">
         <div>
           <Image
             src="/theCourse.png"
@@ -14,11 +14,11 @@ export function TheCourse() {
           />
         </div>
 
-        <div className="max-w-[50%] h-full ">
-          <h1 className="text-4xl font-semibold text-gray-200">
+        <div className="md:max-w-[50%] h-full ">
+          <h1 className="text-4xl font-semibold text-gray-200 max-lg:text-2xl">
             Matemática para o Sucesso em sua carreira.
           </h1>
-          <p className="text-md font-light mt-9 text-gray-200">
+          <p className="text-md font-light mt-9 text-gray-200 max-lg:text-sm">
             Você já se sentiu intimidado pela matemática? Acreditou que era uma
             área reservada apenas para os gênios e especialistas? Chegou a hora
             de mudar essa percepção e abrir as portas para um mundo repleto de
@@ -30,7 +30,7 @@ export function TheCourse() {
             acessível e envolvente para estudantes de todas as idades e níveis
             de conhecimento.
           </p>
-          <p className="text-md font-light mt-4 text-gray-200">
+          <p className="text-md font-light mt-4 text-gray-200 max-lg:text-sm">
             Ao adquirir nosso curso, você terá acesso a um conteúdo rico e
             estruturado, repleto de exemplos práticos, exercícios desafiadores e
             explicações claras que irão desvendar os mistérios dos números.
@@ -39,7 +39,7 @@ export function TheCourse() {
             a excelência matemática.
           </p>
           <a
-            className="btn btn-secondary mt-6"
+            className="btn btn-secondary mt-6 max-md:btn-sm"
             href="https://pay.hotmart.com/A66293133V"
           >
             QUERO TER SUCESSO EM MINHA CARREIRA

@@ -1,16 +1,21 @@
 import Image from "next/image";
+import { MutableRefObject } from "react";
 
 export function Benefits() {
   return (
-    <main>
-      <div className="w-full py-8 px-28 flex justify-center items-center gap-8">
-        <div className="card shadow-xl px-10 bg-base-300">
-          <div className="card-body">
-            <h2 className="card-title text-primary text-3xl">Conteúdos!</h2>
-            <p className="italic">14 Aulas + 14 Listas de Exercícios</p>
+    <main id="benefits">
+      <div className="w-full py-8  px-8 lg:px-28 flex justify-center items-center gap-8 max-md:flex-col">
+        <div className="card shadow-xl md:px-10 md:py-6 max-md:p-4 bg-base-300">
+          <div className="card-body p-1">
+            <h2 className="card-title text-primary text-3xl max-lg:text-xl">
+              Conteúdos!
+            </h2>
+            <p className="italic max-lg:text-sm">
+              14 Aulas + 14 Listas de Exercícios
+            </p>
             <section>
               <ul>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic ">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic ">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -20,7 +25,7 @@ export function Benefits() {
                   />
                   Operações Elementares
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -30,7 +35,7 @@ export function Benefits() {
                   />
                   Equações{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -40,7 +45,7 @@ export function Benefits() {
                   />
                   Inequações{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -50,7 +55,7 @@ export function Benefits() {
                   />
                   Trigonometria
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -60,7 +65,7 @@ export function Benefits() {
                   />
                   Polinômios{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -70,7 +75,7 @@ export function Benefits() {
                   />
                   Geometria Plana
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -80,7 +85,7 @@ export function Benefits() {
                   />
                   Sistemas Lineares
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -90,7 +95,7 @@ export function Benefits() {
                   />
                   Matrizes{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -100,7 +105,7 @@ export function Benefits() {
                   />
                   Geometria Analítica
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -110,7 +115,7 @@ export function Benefits() {
                   />
                   Cônicas{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -120,7 +125,7 @@ export function Benefits() {
                   />
                   Funções{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -130,7 +135,7 @@ export function Benefits() {
                   />
                   Limites{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -140,7 +145,7 @@ export function Benefits() {
                   />
                   Derivadas{" "}
                 </li>
-                <li className="flex items-center gap-2 text-md font-medium my-2 italic">
+                <li className="flex items-center gap-2 max-md:text-md text-sm  font-medium my-2 italic">
                   {" "}
                   <Image
                     alt="icone de checkbox"
@@ -153,9 +158,9 @@ export function Benefits() {
               </ul>
             </section>
           </div>
-          <div className="card-actions justify-center pb-4">
+          <div className="card-actions justify-center md:pb-4 ">
             <a
-              className="btn btn-primary"
+              className="btn btn-primary max-md:btn-sm"
               href="https://pay.hotmart.com/A66293133V"
             >
               EU QUERO APRENDER
@@ -163,11 +168,11 @@ export function Benefits() {
           </div>
         </div>
 
-        <div className="max-w-[50%]">
-          <h2 className="text-alpha text-2xl font-bold">
+        <div className="md:max-w-[50%]">
+          <h2 className="text-alpha text-2xl font-bold max-lg:text-xl">
             BENEFÍCIOS E METODOLOGIA DE ENSINO
           </h2>
-          <p className="py-6">
+          <p className="py-6 max-lg:text-sm">
             A prática de listas de exercícios em conjunto com as aulas é uma
             abordagem fundamental para maximizar seu aprendizado e domínio da
             matemática. Essa combinação poderosa proporciona uma base sólida,
@@ -182,7 +187,7 @@ export function Benefits() {
             projetadas para consolidar o que foi aprendido nas aulas, permitindo
             que você aplique os conceitos teóricos de maneira prática.
           </p>
-          <p>
+          <p className="max-lg:text-sm">
             Elas oferecem uma oportunidade valiosa para você se envolver
             ativamente com a matéria, identificar áreas que precisam ser
             reforçadas e aprimorar suas habilidades de resolução de problemas.

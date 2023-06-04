@@ -6,12 +6,12 @@ import { TheCourse } from "@/components/main/TheCourse";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Header />
       <HeaderSection />
       <TheCourse />
       <Benefits />
       <Footer />
-    </div>
+    </main>
   );
 }
